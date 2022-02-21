@@ -16,6 +16,9 @@ task:
       - cat /etc/os*
       - env
   
+  Disk_check_script:
+      - ./disk.sh
+      
   Sync_script:
       - ./sync
   
