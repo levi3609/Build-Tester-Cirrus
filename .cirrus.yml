@@ -2,7 +2,7 @@ env:
     BUILD_USER: rosy
     BUILD_HOST: nha-project
     CIRRUS_CLONE_DEPTH: 1
-    CIRRUS_WORKING_DIR: /tmp/cirrus-ci-build
+    CIRRUS_WORKING_DIR: /tmp/ci
     
 task:
   name: "Build deploy.."
@@ -19,7 +19,7 @@ task:
   Sync_script:
       - ./sync
   
-  Spec-Check_script:
-      - ./disk.sh
+  Build_script:
+      - ./build
 
 
